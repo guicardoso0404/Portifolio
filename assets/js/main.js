@@ -1,5 +1,6 @@
 import { projetos, materiaisSuporte } from "./projetos.js";
 import { initParticles } from "./particles.js";
+import { initProjectCarousel } from "./project-carousel.js";
 import "./i18n.js";
 import "./theme.js";
 
@@ -32,6 +33,8 @@ window.addEventListener("load", function begin() {
   }
   if (projectsSection) {
     projetos(projectsSection);
+    initProjectCarousel();
+    ScrollReveal().reveal("#projects header");
   }
   onScroll();
   initProjectFilters();
@@ -199,9 +202,6 @@ ScrollReveal({
   #support-materials,
   #support-materials header,
   #support-materials .card,
-  #projects,
-  #projects header,
-  #projects .card,
   #knowledge,
   #knowledge header,
   #knowledge .card,

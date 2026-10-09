@@ -56,7 +56,71 @@ const translations = new Map([
   ["Guia de estudo", "Study Guide"],
   ["Guia básico de Windows", "Windows Basics Guide"],
   ["Orientações para conferir a conexão, observar o armazenamento e solicitar ajuda com informações úteis.", "Guidance on checking your connection, reviewing storage and providing useful information when requesting help."],
+  ["Pular para o conteúdo", "Skip to content"],
+  ["Voltar ao portfólio", "Back to portfolio"],
+  ["Materiais para estudar a resolução de problemas e a comunicação com quem precisa de ajuda.", "Materials for studying troubleshooting and communicating with people who need help."],
+  ["Os casos desta página são fictícios. As ações e os resultados descritos nos exemplos são simulados e não representam atendimentos realizados.", "The cases on this page are fictional. The actions and results described in the examples are simulated and do not represent actual support work."],
+  ["NESTA PÁGINA", "ON THIS PAGE"],
+  ["Conectividade", "Connectivity"],
+  ["Chamado de suporte", "Support Ticket"],
+  ["Guia de Windows", "Windows Guide"],
+  ["Cenário fictício: um notebook com Windows 11 não acessa sites. Outro equipamento na mesma rede funciona normalmente.", "Fictional scenario: a Windows 11 laptop cannot access websites. Another device on the same network works normally."],
+  ["Roteiro de investigação", "Investigation Steps"],
+  ["Entender o relato.", "Understand the reported problem."],
+  ["Perguntar quando começou, se todos os sites falham e se houve alguma mudança recente. Registrar a mensagem de erro, sem antecipar a causa.", "Ask when it started, whether all websites fail and whether anything has changed recently. Record the error message without assuming the cause."],
+  ["Conferir a conexão.", "Check the connection."],
+  ["Verificar em Configurações → Rede e Internet se o Wi-Fi está ativado, se o modo avião está desligado e se a rede esperada está selecionada. Em uma conexão por cabo, observar o encaixe e o estado do cabo.", "In Settings → Network & internet, check that Wi-Fi is on, airplane mode is off and the expected network is selected. For a wired connection, check that the cable is securely plugged in and inspect its condition."],
+  ["Comparar o alcance do problema.", "Compare the scope of the problem."],
+  ["Testar um segundo site e verificar outro dispositivo na mesma rede. Esses resultados ajudam a separar uma falha do notebook, da rede ou de um serviço específico.", "Try a second website and check another device on the same network. These results help determine whether the problem affects the laptop, the network or a specific service."],
+  ["Testar uma mudança por vez.", "Test one change at a time."],
+  ["Neste exemplo, a hipótese é Wi-Fi desativado. O teste proposto é ativá-lo e conectar à rede correta. Se isso não explicar o problema, consultar o diagnóstico de Rede e Internet no aplicativo Obter Ajuda.", "In this example, the hypothesis is that Wi-Fi is off. The proposed test is to turn it on and connect to the correct network. If this does not explain the problem, use the Network and Internet troubleshooter in the Get Help app."],
+  ["Validar e registrar.", "Verify and document."],
+  ["Conferir a conexão e repetir o acesso que estava falhando. Anotar o que foi observado antes e depois, a ação testada e o resultado.", "Check the connection and try accessing the websites again. Record the observations before and after the change, the action tested and the result."],
+  ["Desfecho simulado", "Simulated Outcome"],
+  ["No cenário fictício, o Wi-Fi estava desativado. Após sua ativação e conexão à rede correta, dois sites passam a abrir e o usuário confirma o acesso. Esse resultado é uma premissa do exercício, não um teste executado.", "In the fictional scenario, Wi-Fi was off. After it is turned on and connected to the correct network, two websites open and the user confirms access. This result is an assumption of the exercise, not a test that was performed."],
+  ["Se continuar sem conexão:", "If there is still no connection:"],
+  ["encaminhar o chamado com os sintomas, o alcance do problema e os testes já feitos. Em uma rede de empresa, mudanças em roteadores, VPN ou configurações administradas dependem da equipe responsável.", "forward the ticket with the symptoms, the scope of the problem and the tests already performed. On a company network, changes to routers, VPNs or managed settings must be handled by the responsible team."],
+  ["Referência para as verificações de conexão:", "Reference for connection checks:"],
+  ["Microsoft — problemas de conexão Wi-Fi no Windows", "Microsoft — fixing Wi-Fi connection issues in Windows"],
+  ["Um exemplo de como organizar o cenário anterior para que outra pessoa consiga entender o problema e acompanhar sua resolução.", "An example of how to document the previous scenario so that someone else can understand the problem and follow its resolution."],
+  ["EXEMPLO FICTÍCIO · SUP-001", "FICTIONAL EXAMPLE · SUP-001"],
+  ["Notebook sem conexão com a internet", "Laptop without an internet connection"],
+  ["Solicitante e ambiente", "Requester and Environment"],
+  ["Usuário de demonstração; notebook de estudo com Windows 11 e conexão Wi-Fi.", "Demo user; a study laptop running Windows 11 with a Wi-Fi connection."],
+  ["Descrição", "Description"],
+  ["O usuário informa que não consegue abrir sites no notebook. O problema começou ao iniciar o expediente fictício.", "The user reports being unable to open websites on the laptop. The problem began at the start of the fictional workday."],
+  ["Impacto e prioridade", "Impact and Priority"],
+  ["Uma pessoa sem acesso a atividades online. Neste exercício, prioridade média, considerando a existência de outro equipamento disponível; a classificação real depende dos critérios da organização.", "One person cannot access online activities. In this exercise, the priority is medium because another device is available; the actual classification depends on the organization's criteria."],
+  ["Evidências do cenário", "Scenario Evidence"],
+  ["Dois sites não abrem no notebook; outro dispositivo acessa a mesma rede; a opção de Wi-Fi aparece desativada.", "Two websites do not open on the laptop; another device can access the same network; Wi-Fi is shown as turned off."],
+  ["Ação proposta", "Proposed Action"],
+  ["Ativar o Wi-Fi, selecionar a rede correta e verificar se a conexão é estabelecida.", "Turn on Wi-Fi, select the correct network and check whether a connection is established."],
+  ["Resolução simulada", "Simulated Resolution"],
+  ["No exercício, a ativação do Wi-Fi restabelece a conexão. O acesso aos dois sites é considerado validado e o usuário confirma que pode continuar.", "In the exercise, turning on Wi-Fi restores the connection. Access to both websites is considered verified, and the user confirms they can continue."],
+  ["Status do exemplo", "Example Status"],
+  ["Resolvido no cenário simulado. Em um atendimento real, registrar a validação e seguir o fluxo de encerramento da organização.", "Resolved in the simulated scenario. In actual support work, record the verification and follow the organization's ticket closure process."],
+  ["Exemplo de retorno ao usuário", "Example of a Reply to the User"],
+  ["“Neste exemplo, identificamos que o Wi-Fi estava desativado e orientamos sua ativação. Por favor, confirme se os sites que você precisa usar estão abrindo. Se o problema voltar, informe o horário e a mensagem apresentada.”", "“In this example, we found that Wi-Fi was off and explained how to turn it on. Please confirm that the websites you need are opening. If the problem returns, let us know the time and the message displayed.”"],
+  ["Um registro útil descreve fatos, ações e resultados em ordem. Use identificadores de equipamentos e mensagens de erro quando necessário; exclua senhas e informações pessoais desnecessárias.", "A useful record describes facts, actions and results in sequence. Include device identifiers and error messages when needed; leave out passwords and unnecessary personal information."],
+  ["Orientações introdutórias para o Windows 11. Em equipamentos da empresa, siga as orientações da equipe de TI.", "Introductory guidance for Windows 11. On company devices, follow the IT team's instructions."],
+  ["Quando a internet não funciona", "When the Internet Is Not Working"],
+  ["Abra Configurações → Rede e Internet. Confira se está conectado à rede esperada. No Wi-Fi, observe se ele está ativado e se o modo avião está desligado. Teste outro site e informe ao suporte se a falha ocorre em todos ou apenas em um.", "Open Settings → Network & internet. Check that you are connected to the expected network. For Wi-Fi, check that it is on and airplane mode is off. Try another website and tell support whether the problem affects all websites or just one."],
+  ["Consulta:", "Reference:"],
+  ["orientações de conexão da Microsoft", "Microsoft's connection guidance"],
+  ["Quando aparece um aviso de pouco espaço", "When a Low Storage Warning Appears"],
+  ["Abra Configurações → Sistema → Armazenamento e observe as categorias que ocupam espaço. Revise os itens antes de qualquer exclusão. Se tiver dúvida sobre um arquivo ou aplicativo, consulte o suporte; mantenha os documentos de trabalho no local de armazenamento definido pela empresa.", "Open Settings → System → Storage and review the categories using space. Review items before deleting anything. If you are unsure about a file or app, contact support; keep work documents in the storage location specified by your company."],
+  ["configurações de armazenamento da Microsoft", "Microsoft's storage settings guidance"],
+  ["Como pedir ajuda com clareza", "How to Ask for Help Clearly"],
+  ["Informe o que tentava fazer e qual aplicativo estava usando.", "Explain what you were trying to do and which app you were using."],
+  ["Copie a mensagem de erro ou envie uma captura sem dados sensíveis.", "Copy the error message or send a screenshot without sensitive data."],
+  ["Indique quando começou, a frequência e quem mais foi afetado.", "State when it started, how often it happens and who else is affected."],
+  ["Conte quais verificações já fez e os resultados observados.", "Describe the checks you have already performed and the results you observed."],
+  ["Exemplo fictício:", "Fictional example:"],
+  ["“Ao abrir o sistema no navegador, aparece uma mensagem de falha de conexão. Começou hoje de manhã. Outros sites abrem normalmente; tentei novamente e o erro continuou.”", "“When I open the system in my browser, a connection error message appears. It started this morning. Other websites open normally; I tried again and the error persisted.”"],
+  ["Materiais de estudo em suporte técnico", "Technical support study materials"],
   ["Projetos de desenvolvimento", "Development Projects"],
+  ["Projeto anterior", "Previous project"],
+  ["Próximo projeto", "Next project"],
   ["Projeto profissional · SINDIMETAL", "Professional Project · SINDIMETAL"],
   ["Sistema web Full Stack de Inteligência de Negócios (BI), com API REST e arquitetura em camadas, em desenvolvimento no SINDIMETAL.", "A Full Stack Business Intelligence (BI) web system with a REST API and layered architecture, under development at SINDIMETAL."],
   ["Full Stack - BI - API REST - Arquitetura em camadas", "Full Stack - BI - REST API - Layered architecture"],
@@ -79,14 +143,21 @@ const attributeTranslations = new Map([
   ["Ícone de celular.", "Phone illustration."],
   ["Voltar ao topo", "Back to top"],
   ["Mudar tema", "Change theme"],
+  ["Navegação do portfólio", "Portfolio navigation"],
+  ["Conteúdo dos materiais", "Materials contents"],
   ["Logo do projeto Task Flow.", "Task Flow project logo."],
   ["Logo do projeto NetworkUp.", "NetworkUp project logo."],
   ["Logo do projeto DoraNina.", "DoraNina project logo."],
   ["Repositório no GitHub", "GitHub repository"],
-  ["Ver projeto", "View project"]
+  ["Ver projeto", "View project"],
+  ["Carrossel de projetos", "Project carousel"],
+  ["Projeto anterior", "Previous project"],
+  ["Próximo projeto", "Next project"]
 ]);
 
 const metaTranslations = new Map([
+  ["Materiais de suporte ao Windows | Guilherme Cardoso", "Windows Support Materials | Guilherme Cardoso"],
+  ["Materiais de estudo sobre suporte ao Windows: diagnóstico de conectividade, registro fictício de chamado e orientações ao usuário.", "Windows support study materials: connectivity troubleshooting, a fictional support ticket and user guidance."],
   ["Guilherme Cardoso - Suporte Técnico. Estudante de Sistemas de Informação com experiência em suporte ao Windows, manutenção de equipamentos e sistemas web.", "Guilherme Cardoso - Technical Support. Information Systems student with experience in Windows support, equipment maintenance and web systems."],
   ["Guilherme Cardoso - Suporte Técnico", "Guilherme Cardoso - Technical Support"],
   ["Guilherme Cardoso | Suporte Técnico", "Guilherme Cardoso | Technical Support"],
@@ -178,6 +249,22 @@ function updateWhatsAppLink(language) {
   link.href = `https://api.whatsapp.com/send?phone=5551991603189&text=${encodeURIComponent(message)}`;
 }
 
+function updateResumeLink(language) {
+  const link = document.querySelector("[data-resume-pt][data-resume-en]");
+  if (!link) return;
+
+  link.setAttribute("href", language === "en" ? link.dataset.resumeEn : link.dataset.resumePt);
+}
+
+function updateSupportReferenceLinks(language) {
+  const locale = language === "en" ? "en-us" : "pt-br";
+  document.querySelectorAll('a[href^="https://support.microsoft.com/"]').forEach((link) => {
+    const url = new URL(link.href);
+    url.pathname = url.pathname.replace(/^\/(?:pt-br|en-us)\//, `/${locale}/`);
+    link.href = url.href;
+  });
+}
+
 function updateSwitcher(language) {
   const switcher = document.getElementById("language-switcher");
   if (!switcher) return;
@@ -200,6 +287,8 @@ function applyLanguage(language) {
   translateAttributes(document, currentLanguage);
   translateMetadata(currentLanguage);
   updateWhatsAppLink(currentLanguage);
+  updateResumeLink(currentLanguage);
+  updateSupportReferenceLinks(currentLanguage);
   updateSwitcher(currentLanguage);
 }
 

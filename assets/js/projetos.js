@@ -32,10 +32,11 @@ function materiaisSuporte(section) {
 
 function projetos(section) {
   section.innerHTML = `<header>
-      <h2>Projetos</h2>
+      <h2 id="projects-title">Projetos</h2>
     </header>
     <div class="content">
-      <div class="cards">
+      <div class="project-carousel" data-project-carousel role="region" aria-labelledby="projects-title">
+        <div class="cards project-carousel-track" id="project-carousel-track" data-carousel-track tabindex="0" role="group" aria-label="Carrossel de projetos">
         <div class="card">
           <h3>Meu Valor SINDIMETAL RS</h3>
           <div class="img-wrapper">
@@ -201,6 +202,16 @@ function projetos(section) {
             área do cliente e painel administrativo.
           </p>
           <p>PHP - PostgreSQL - HTML - CSS - JavaScript - Vercel</p>
+        </div>
+        </div>
+        <div class="project-carousel-controls">
+          <button class="button project-carousel-control" type="button" data-carousel-prev aria-label="Projeto anterior" aria-controls="project-carousel-track" disabled>
+            <i class="bi bi-arrow-left" aria-hidden="true"></i><span class="project-carousel-control-label">Projeto anterior</span>
+          </button>
+          <p class="project-carousel-position" data-carousel-position role="status" aria-live="polite" aria-atomic="true">1 / 4</p>
+          <button class="button project-carousel-control" type="button" data-carousel-next aria-label="Próximo projeto" aria-controls="project-carousel-track">
+            <span class="project-carousel-control-label">Próximo projeto</span><i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>`;
