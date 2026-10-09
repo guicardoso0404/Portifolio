@@ -4,14 +4,25 @@ const translations = new Map([
   ["Projetos", "Projects"],
   ["Conhecimentos", "Skills"],
   ["Fale comigo", "Contact me"],
+  ["Olá! 👋", "Hello! 👋"],
   ["Eu sou Guilherme,", "I'm Guilherme,"],
-  ["Desenvolvedor Web Full Stack.", "Full Stack Web Developer."],
-  ["Me chamo Guilherme Cardoso, desenvolvedor web Full Stack e estudante de Sistemas de Informação pela Universidade Feevale. Sou formado em Técnico em Informática para Internet pelo Senac São Leopoldo e tenho interesse em desenvolvimento de sistemas, aplicações web e soluções digitais. Desenvolvo páginas e sistemas web responsivos, priorizando organização do código, boa experiência do usuário e design moderno. Sou uma pessoa dedicada, criativa e comprometida com o aprendizado contínuo, sempre buscando evoluir minhas habilidades em programação e tecnologia. Meu objetivo é criar soluções eficientes que unam inovação, funcionalidade e impacto real.", "My name is Guilherme Cardoso, I am a Full Stack web developer and an Information Systems student at Feevale University. I hold a technical degree in Web Development from Senac São Leopoldo and I am interested in systems development, web applications and digital solutions. I build responsive websites and web systems, prioritizing clean code, a good user experience and modern design. I am dedicated, creative and committed to continuous learning, always looking to improve my programming and technology skills. My goal is to create efficient solutions that combine innovation, functionality and real-world impact."],
-  ["Experiência Profissional", "Professional Experience"],
+  ["Estudante de Sistemas de Informação, com experiência em suporte ao Windows e manutenção de equipamentos.", "Information Systems student with experience in Windows support and equipment maintenance."],
+  ["Sou Guilherme Cardoso, estudante de Sistemas de Informação na Universidade Feevale e formado em Técnico em Informática para Internet pelo Senac São Leopoldo. Atuo como estagiário de TI no SINDIMETAL, com suporte técnico, suporte ao Windows, manutenção de equipamentos e apoio às rotinas de tecnologia da informação. Também desenvolvo o Meu Valor SINDIMETAL RS, um sistema web Full Stack de Inteligência de Negócios (BI), com API REST e arquitetura em camadas.", "I'm Guilherme Cardoso, an Information Systems student at Feevale University with a technical qualification in Web Development from Senac São Leopoldo. I work as an IT intern at SINDIMETAL, providing technical support, Windows support, equipment maintenance and assistance with day-to-day IT operations. I also develop Meu Valor SINDIMETAL RS, a Full Stack Business Intelligence (BI) web system with a REST API and layered architecture."],
+  ["Busco uma oportunidade em Suporte Técnico para ajudar usuários, solucionar problemas e contribuir com o funcionamento dos recursos de TI. Minha experiência como Operador de Sistemas e meus projetos de desenvolvimento web complementam essa atuação, trazendo uma base em programação e banco de dados. Valorizo a organização, a comunicação clara e o aprendizado contínuo.", "I'm looking for an opportunity in Technical Support to help users, solve problems and keep IT resources working. My experience as a Systems Operator and my web development projects complement this work with a foundation in programming and databases. I value organization, clear communication and continuous learning."],
+  ["Experiência e formação", "Experience and Education"],
   ["2026 - Atual", "2026 - Present"],
   ["Estágio de TI", "IT Intern"],
-  ["Atuação em suporte técnico, manutenção de equipamentos e apoio às rotinas de tecnologia da informação.", "Working with technical support, equipment maintenance and assistance with information technology operations."],
+  ["Atuação em suporte técnico e manutenção de equipamentos, com apoio às demandas do dia a dia de TI.", "Providing technical support and equipment maintenance, helping with day-to-day IT needs."],
+  ["Suporte técnico no ambiente Windows.", "Technical support in a Windows environment."],
+  ["Manutenção de equipamentos.", "Equipment maintenance."],
+  ["Apoio às rotinas de tecnologia da informação.", "Assistance with day-to-day IT operations."],
+  ["Desenvolvimento do Meu Valor SINDIMETAL RS, sistema web Full Stack de Inteligência de Negócios (BI), com API REST e arquitetura em camadas.", "Development of Meu Valor SINDIMETAL RS, a Full Stack Business Intelligence (BI) web system with a REST API and layered architecture."],
+  ["API REST", "REST API"],
   ["Suporte Técnico", "Technical Support"],
+  ["Suporte ao Windows", "Windows Support"],
+  ["Manutenção de Equipamentos", "Equipment Maintenance"],
+  ["Suporte a Sistemas", "Systems Support"],
+  ["Desenvolvimento e Automação", "Development and Automation"],
   ["Infraestrutura", "Infrastructure"],
   ["Automação", "Automation"],
   ["TI", "IT"],
@@ -21,26 +32,38 @@ const translations = new Map([
   ["Engenharia de Software", "Software Engineering"],
   ["Banco de Dados", "Databases"],
   ["Operador de Sistemas", "Systems Operator"],
-  ["Desenvolvimento e manutenção de sistemas web, otimização de processos e suporte técnico especializado.", "Development and maintenance of web systems, process optimization and specialized technical support."],
+  ["Atuação com suporte técnico, desenvolvimento e manutenção de sistemas web e otimização de processos.", "Working in technical support, web systems development and maintenance, and process improvement."],
   ["Técnico em Informática para Internet", "Web Development Technician"],
   ["Formação técnica em desenvolvimento web, banco de dados e programação orientada a objetos.", "Technical education in web development, databases and object-oriented programming."],
-  ["HTML5 é uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.", "HTML5 is a hypertext markup language used to structure and build the elements of a web page."],
-  ["CSS3 é uma linguagem de estilo usada para descrever a apresentação dos elementos da página os estilizando.", "CSS3 is a stylesheet language used to define the visual presentation and styling of web page elements."],
-  ["JavaScript é uma linguagem de programação interpretada usada no desenvolvimento web para descrever funcionalidades e comportamentos da página.", "JavaScript is an interpreted programming language used in web development to create page functionality and behavior."],
-  ["Java é uma linguagem de programação orientada a objetos, muito utilizada no backend para construir APIs, sistemas robustos e aplicações escaláveis.", "Java is an object-oriented programming language widely used in backend development to build APIs, robust systems and scalable applications."],
-  ["React é uma biblioteca JavaScript para construção de interfaces de usuário interativas e componentes reutilizáveis.", "React is a JavaScript library for building interactive user interfaces and reusable components."],
-  ["Node.js é um ambiente de execução JavaScript no servidor, permitindo criar aplicações backend escaláveis e eficientes.", "Node.js is a server-side JavaScript runtime used to build scalable and efficient backend applications."],
-  ["MySQL é um sistema de gerenciamento de banco de dados relacional, amplamente utilizado para armazenar e gerenciar dados.", "MySQL is a relational database management system widely used to store and manage data."],
-  ["PHP é uma linguagem de programação muito usada no backend para construir sites dinâmicos, sistemas web e integrações com banco de dados.", "PHP is a programming language widely used in backend development to build dynamic websites, web systems and database integrations."],
-  ["PostgreSQL é um banco de dados relacional robusto, ideal para aplicações que precisam de desempenho, confiabilidade e consultas mais avançadas.", "PostgreSQL is a robust relational database, ideal for applications that require performance, reliability and advanced queries."],
+  ["Suporte a usuários no ambiente Windows, com foco em compreender dificuldades e apoiar a resolução de problemas no uso do sistema.", "Supporting users in a Windows environment, focusing on understanding their difficulties and helping resolve problems when using the system."],
+  ["Atuação em suporte técnico no estágio de TI, com apoio às demandas do dia a dia e às rotinas de tecnologia da informação.", "Providing technical support during my IT internship, helping with day-to-day needs and IT operations."],
+  ["Experiência com manutenção de equipamentos e apoio ao funcionamento dos recursos de TI no ambiente de trabalho.", "Experience in equipment maintenance and helping keep IT resources working in the workplace."],
+  ["Vivência com suporte técnico, desenvolvimento e manutenção de sistemas web na experiência como Operador de Sistemas.", "Experience in technical support and web systems development and maintenance as a Systems Operator."],
+  ["Uso de MySQL e PostgreSQL nos projetos, com organização de dados e integração com aplicações web.", "Using MySQL and PostgreSQL in projects to organize data and integrate it with web applications."],
+  ["Conhecimentos em JavaScript, Node.js, Java e PHP como diferencial para criar soluções e evoluir na automação de rotinas de TI.", "Knowledge of JavaScript, Node.js, Java and PHP as a foundation for creating solutions and developing my ability to automate IT tasks."],
   ["Fale comigo!", "Contact me!"],
-  ["Currículo", "Resume"],
-  ["©2025 por Guilherme Cardoso.", "©2025 by Guilherme Cardoso."],
+  ["Currículo", "CV"],
+  ["©2026 por Guilherme Cardoso.", "©2026 by Guilherme Cardoso."],
   ["Todos os direitos reservados.", "All rights reserved."],
-  ["NetworkUp - Projeto de conclusao de curso", "NetworkUp - Final Course Project"],
-  ["Aplicacao web para gerenciamento de tarefas, permitindo criar, organizar e acompanhar atividades de forma simples e eficiente.", "Web application for task management, allowing users to create, organize and track activities in a simple and efficient way."],
-  ["Aplicacao de networking para conectar profissionais e empresas.", "Networking application designed to connect professionals and companies."],
-  ["Loja online de bolos artesanais com catalogo, carrinho, pedidos, area do cliente e painel administrativo.", "Online store for handmade cakes with a catalog, shopping cart, orders, customer area and administrative dashboard."]
+  ["Materiais de suporte", "Support Materials"],
+  ["Cenários fictícios de estudo, com roteiros de diagnóstico, registro de chamados e orientação ao usuário.", "Fictional study scenarios with troubleshooting steps, support ticket documentation and user guidance."],
+  ["Estudo de caso simulado", "Simulated Case Study"],
+  ["Diagnóstico de conectividade", "Connectivity Troubleshooting"],
+  ["Roteiro para investigar falta de conexão no Windows, comparar sintomas e validar uma solução.", "A guide to investigating connection problems in Windows, comparing symptoms and verifying a solution."],
+  ["Ler material", "Read material"],
+  ["Registro de chamado de suporte", "Support Ticket Documentation"],
+  ["Exemplo fictício com descrição do problema, impacto, investigação, resolução e retorno ao usuário.", "A fictional example documenting the problem, impact, investigation, resolution and follow-up with the user."],
+  ["Guia de estudo", "Study Guide"],
+  ["Guia básico de Windows", "Windows Basics Guide"],
+  ["Orientações para conferir a conexão, observar o armazenamento e solicitar ajuda com informações úteis.", "Guidance on checking your connection, reviewing storage and providing useful information when requesting help."],
+  ["Projetos de desenvolvimento", "Development Projects"],
+  ["Projeto profissional · SINDIMETAL", "Professional Project · SINDIMETAL"],
+  ["Sistema web Full Stack de Inteligência de Negócios (BI), com API REST e arquitetura em camadas, em desenvolvimento no SINDIMETAL.", "A Full Stack Business Intelligence (BI) web system with a REST API and layered architecture, under development at SINDIMETAL."],
+  ["Full Stack - BI - API REST - Arquitetura em camadas", "Full Stack - BI - REST API - Layered architecture"],
+  ["NetworkUp - Projeto de conclusão de curso", "NetworkUp - Final Course Project"],
+  ["Aplicação web para gerenciamento de tarefas, permitindo criar, organizar e acompanhar atividades de forma simples e eficiente.", "Web application for task management, allowing users to create, organize and track activities in a simple and efficient way."],
+  ["Aplicação de networking para conectar profissionais e empresas.", "Networking application designed to connect professionals and companies."],
+  ["Loja online de bolos artesanais com catálogo, carrinho, pedidos, área do cliente e painel administrativo.", "Online store for handmade cakes with a catalog, shopping cart, orders, customer area and administrative dashboard."]
 ]);
 
 const attributeTranslations = new Map([
@@ -54,21 +77,22 @@ const attributeTranslations = new Map([
   ["Fazer ligação", "Make a call"],
   ["Me chama no zap!", "Message me on WhatsApp!"],
   ["Ícone de celular.", "Phone illustration."],
-  ["Ãcone de celular.", "Phone illustration."],
   ["Voltar ao topo", "Back to top"],
   ["Mudar tema", "Change theme"],
   ["Logo do projeto Task Flow.", "Task Flow project logo."],
   ["Logo do projeto NetworkUp.", "NetworkUp project logo."],
   ["Logo do projeto DoraNina.", "DoraNina project logo."],
-  ["Repositorio no Github", "GitHub repository"],
+  ["Repositório no GitHub", "GitHub repository"],
   ["Ver projeto", "View project"]
 ]);
 
 const metaTranslations = new Map([
-  ["Guilherme Cardoso - Desenvolvedor Full Stack especializado em React, Node.js e MySQL. Criando soluções web modernas e eficientes.", "Guilherme Cardoso - Full Stack Developer specializing in React, Node.js and MySQL. Building modern and efficient web solutions."],
-  ["Guilherme Cardoso - Desenvolvedor Full Stack", "Guilherme Cardoso - Full Stack Developer"],
-  ["Desenvolvedor web Full Stack especializado em criar experiências digitais incríveis com React, Node.js e MySQL.", "Full Stack web developer focused on building modern digital experiences with React, Node.js and MySQL."],
-  ["Desenvolvedor web Full Stack criando soluções modernas e eficientes.", "Full Stack web developer building modern and efficient solutions."]
+  ["Guilherme Cardoso - Suporte Técnico. Estudante de Sistemas de Informação com experiência em suporte ao Windows, manutenção de equipamentos e sistemas web.", "Guilherme Cardoso - Technical Support. Information Systems student with experience in Windows support, equipment maintenance and web systems."],
+  ["Guilherme Cardoso - Suporte Técnico", "Guilherme Cardoso - Technical Support"],
+  ["Guilherme Cardoso | Suporte Técnico", "Guilherme Cardoso | Technical Support"],
+  ["Experiência em suporte técnico, Windows e manutenção de equipamentos, com desenvolvimento web como diferencial para as rotinas de TI.", "Experience in technical support, Windows and equipment maintenance, with web development skills that complement day-to-day IT operations."],
+  ["Suporte técnico, Windows e manutenção de equipamentos. Conheça minha experiência, materiais de estudo e projetos.", "Technical support, Windows and equipment maintenance. Explore my experience, study materials and projects."],
+  ["suporte técnico, suporte de TI, suporte ao Windows, manutenção de equipamentos, suporte a sistemas, Sistemas de Informação, Guilherme Cardoso, desenvolvimento web", "technical support, IT support, Windows support, equipment maintenance, systems support, Information Systems, Guilherme Cardoso, web development"]
 ]);
 
 const reverseTranslations = new Map(
@@ -131,7 +155,10 @@ function translateAttributes(root, language) {
 
 function translateMetadata(language) {
   const dictionary = language === "en" ? metaTranslations : reverseMetaTranslations;
-  const metadata = document.querySelectorAll('meta[name="description"], meta[name="twitter:title"], meta[name="twitter:description"], meta[property="og:title"], meta[property="og:description"]');
+  const metadata = document.querySelectorAll('meta[name="description"], meta[name="keywords"], meta[name="twitter:title"], meta[name="twitter:description"], meta[property="og:title"], meta[property="og:description"]');
+
+  const translatedTitle = dictionary.get(normalize(document.title));
+  if (translatedTitle) document.title = translatedTitle;
 
   metadata.forEach((meta) => {
     const currentValue = normalize(meta.getAttribute("content") || "");
@@ -145,8 +172,8 @@ function updateWhatsAppLink(language) {
   if (!link) return;
 
   const message = language === "en"
-    ? "Hello, Guilherme! I found you through your portfolio and would like to work with you!"
-    : "Olá, Guilherme! Vim do seu portfólio, quero trabalhar contigo!";
+    ? "Hello, Guilherme! I found your portfolio and would like to discuss a technical support opportunity."
+    : "Olá, Guilherme! Vim do seu portfólio e gostaria de conversar sobre uma oportunidade em suporte técnico.";
 
   link.href = `https://api.whatsapp.com/send?phone=5551991603189&text=${encodeURIComponent(message)}`;
 }

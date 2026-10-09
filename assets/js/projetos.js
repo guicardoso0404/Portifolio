@@ -1,9 +1,51 @@
+function materiaisSuporte(section) {
+  section.innerHTML = `<header>
+      <h2>Materiais de suporte</h2>
+      <p class="section-intro">Cenários fictícios de estudo, com roteiros de diagnóstico, registro de chamados e orientação ao usuário.</p>
+    </header>
+    <div class="content">
+      <div class="cards">
+        <div class="card support-material">
+          <i class="bi bi-wifi material-icon" aria-hidden="true"></i>
+          <span class="material-label">Estudo de caso simulado</span>
+          <h3>Diagnóstico de conectividade</h3>
+          <p>Roteiro para investigar falta de conexão no Windows, comparar sintomas e validar uma solução.</p>
+          <a class="button material-link" href="./materiais/suporte.html#conectividade">Ler material <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="card support-material">
+          <i class="bi bi-ticket-detailed material-icon" aria-hidden="true"></i>
+          <span class="material-label">Estudo de caso simulado</span>
+          <h3>Registro de chamado de suporte</h3>
+          <p>Exemplo fictício com descrição do problema, impacto, investigação, resolução e retorno ao usuário.</p>
+          <a class="button material-link" href="./materiais/suporte.html#chamado">Ler material <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="card support-material">
+          <i class="bi bi-microsoft material-icon" aria-hidden="true"></i>
+          <span class="material-label">Guia de estudo</span>
+          <h3>Guia básico de Windows</h3>
+          <p>Orientações para conferir a conexão, observar o armazenamento e solicitar ajuda com informações úteis.</p>
+          <a class="button material-link" href="./materiais/suporte.html#windows">Ler material <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>`;
+}
+
 function projetos(section) {
   section.innerHTML = `<header>
       <h2>Projetos</h2>
     </header>
     <div class="content">
       <div class="cards">
+        <div class="card">
+          <h3>Meu Valor SINDIMETAL RS</h3>
+          <div class="img-wrapper">
+            <i class="bi bi-bar-chart-line project-icon" aria-hidden="true"></i>
+          </div>
+          <span class="material-label">Projeto profissional · SINDIMETAL</span>
+          <p>Sistema web Full Stack de Inteligência de Negócios (BI), com API REST e arquitetura em camadas,
+            em desenvolvimento no SINDIMETAL.</p>
+          <p>Full Stack - BI - API REST - Arquitetura em camadas</p>
+        </div>
         <div class="card">
           <h3>Task Flow</h3>
           <div class="img-wrapper">
@@ -16,7 +58,7 @@ function projetos(section) {
                 href="https://github.com/guicardoso0404/taskflow"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Repositorio no Github"
+                title="Repositório no GitHub"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,13 +94,13 @@ function projetos(section) {
             </div>
           </div>
           <p>
-            Aplicacao web para gerenciamento de tarefas, permitindo criar,
+            Aplicação web para gerenciamento de tarefas, permitindo criar,
             organizar e acompanhar atividades de forma simples e eficiente.
           </p>
           <p>Java - Spring Boot - MySQL - HTML - CSS - JavaScript</p>
         </div>
         <div class="card">
-          <h3>NetworkUp - Projeto de conclusao de curso</h3>
+          <h3>NetworkUp - Projeto de conclusão de curso</h3>
           <div class="img-wrapper">
             <img
               src="./assets/images/projects/networkup.png"
@@ -69,7 +111,7 @@ function projetos(section) {
                 href="https://github.com/guicardoso0404/NetworkUp"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Repositorio no Github"
+                title="Repositório no GitHub"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +146,7 @@ function projetos(section) {
               </a>
             </div>
           </div>
-          <p>Aplicacao de networking para conectar profissionais e empresas.</p>
+          <p>Aplicação de networking para conectar profissionais e empresas.</p>
           <p>HTML - CSS - JavaScript - NodeJS - MySQL</p>
         </div>
         <div class="card">
@@ -119,7 +161,7 @@ function projetos(section) {
                 href="https://github.com/guicardoso0404/doranina"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Repositorio no Github"
+                title="Repositório no GitHub"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -155,8 +197,8 @@ function projetos(section) {
             </div>
           </div>
           <p>
-            Loja online de bolos artesanais com catalogo, carrinho, pedidos,
-            area do cliente e painel administrativo.
+            Loja online de bolos artesanais com catálogo, carrinho, pedidos,
+            área do cliente e painel administrativo.
           </p>
           <p>PHP - PostgreSQL - HTML - CSS - JavaScript - Vercel</p>
         </div>
@@ -164,4 +206,4 @@ function projetos(section) {
     </div>`;
 }
 
-export { projetos };
+export { projetos, materiaisSuporte };

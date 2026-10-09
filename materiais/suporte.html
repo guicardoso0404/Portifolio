@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Materiais de estudo sobre suporte ao Windows: diagnóstico de conectividade, registro fictício de chamado e orientações ao usuário." />
+  <title>Materiais de suporte ao Windows | Guilherme Cardoso</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="icon" href="../assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/materiais.css" />
+  <script type="module" src="../assets/js/theme.js"></script>
+</head>
+<body class="materials-page">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <nav id="navigation" aria-label="Navegação do portfólio">
+    <div class="wrapper">
+      <a class="logo" href="../index.html">Guilherme</a>
+      <a class="button materials-back" href="../index.html#support-materials"><i class="bi bi-arrow-left" aria-hidden="true"></i> Voltar ao portfólio</a>
+    </div>
+  </nav>
+
+  <main id="conteudo" class="wrapper page-shell">
+    <header class="page-intro">
+      <h4>Suporte ao Windows</h4>
+      <h1>Materiais de suporte</h1>
+      <p class="section-intro">Materiais para estudar a resolução de problemas e a comunicação com quem precisa de ajuda.</p>
+      <p class="portfolio-card study-notice">Os casos desta página são fictícios. As ações e os resultados descritos nos exemplos são simulados e não representam atendimentos realizados.</p>
+    </header>
+
+    <div class="content-layout">
+      <aside class="contents-nav" aria-label="Conteúdo dos materiais">
+        <p>NESTA PÁGINA</p>
+        <a href="#conectividade"><span>01</span> Conectividade</a>
+        <a href="#chamado"><span>02</span> Chamado de suporte</a>
+        <a href="#windows"><span>03</span> Guia de Windows</a>
+      </aside>
+
+      <div class="materials">
+        <section id="conectividade" class="portfolio-card material-section" aria-labelledby="conectividade-titulo">
+          <div class="section-heading">
+            <i class="bi bi-wifi material-icon" aria-hidden="true"></i>
+            <header>
+              <p class="badge">Estudo de caso simulado</p>
+              <h2 id="conectividade-titulo">Diagnóstico de conectividade</h2>
+            </header>
+          </div>
+          <p class="section-lead">Cenário fictício: um notebook com Windows 11 não acessa sites. Outro equipamento na mesma rede funciona normalmente.</p>
+          <h3>Roteiro de investigação</h3>
+          <ol class="steps">
+            <li><strong>Entender o relato.</strong> Perguntar quando começou, se todos os sites falham e se houve alguma mudança recente. Registrar a mensagem de erro, sem antecipar a causa.</li>
+            <li><strong>Conferir a conexão.</strong> Verificar em Configurações → Rede e Internet se o Wi-Fi está ativado, se o modo avião está desligado e se a rede esperada está selecionada. Em uma conexão por cabo, observar o encaixe e o estado do cabo.</li>
+            <li><strong>Comparar o alcance do problema.</strong> Testar um segundo site e verificar outro dispositivo na mesma rede. Esses resultados ajudam a separar uma falha do notebook, da rede ou de um serviço específico.</li>
+            <li><strong>Testar uma mudança por vez.</strong> Neste exemplo, a hipótese é Wi-Fi desativado. O teste proposto é ativá-lo e conectar à rede correta. Se isso não explicar o problema, consultar o diagnóstico de Rede e Internet no aplicativo Obter Ajuda.</li>
+            <li><strong>Validar e registrar.</strong> Conferir a conexão e repetir o acesso que estava falhando. Anotar o que foi observado antes e depois, a ação testada e o resultado.</li>
+          </ol>
+          <div class="result-box">
+            <h3>Desfecho simulado</h3>
+            <p>No cenário fictício, o Wi-Fi estava desativado. Após sua ativação e conexão à rede correta, dois sites passam a abrir e o usuário confirma o acesso. Esse resultado é uma premissa do exercício, não um teste executado.</p>
+          </div>
+          <p class="practice-note"><strong>Se continuar sem conexão:</strong> encaminhar o chamado com os sintomas, o alcance do problema e os testes já feitos. Em uma rede de empresa, mudanças em roteadores, VPN ou configurações administradas dependem da equipe responsável.</p>
+          <p class="source">Referência para as verificações de conexão: <a href="https://support.microsoft.com/pt-br/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows" target="_blank" rel="noopener noreferrer">Microsoft — problemas de conexão Wi-Fi no Windows</a>.</p>
+        </section>
+
+        <section id="chamado" class="portfolio-card material-section" aria-labelledby="chamado-titulo">
+          <div class="section-heading">
+            <i class="bi bi-ticket-detailed material-icon" aria-hidden="true"></i>
+            <header>
+              <p class="badge">Estudo de caso simulado</p>
+              <h2 id="chamado-titulo">Registro de chamado de suporte</h2>
+            </header>
+          </div>
+          <p class="section-lead">Um exemplo de como organizar o cenário anterior para que outra pessoa consiga entender o problema e acompanhar sua resolução.</p>
+          <div class="ticket-summary">
+            <span>EXEMPLO FICTÍCIO · SUP-001</span>
+            <p>Notebook sem conexão com a internet</p>
+          </div>
+          <dl class="ticket-fields">
+            <div><dt>Solicitante e ambiente</dt><dd>Usuário de demonstração; notebook de estudo com Windows 11 e conexão Wi-Fi.</dd></div>
+            <div><dt>Descrição</dt><dd>O usuário informa que não consegue abrir sites no notebook. O problema começou ao iniciar o expediente fictício.</dd></div>
+            <div><dt>Impacto e prioridade</dt><dd>Uma pessoa sem acesso a atividades online. Neste exercício, prioridade média, considerando a existência de outro equipamento disponível; a classificação real depende dos critérios da organização.</dd></div>
+            <div><dt>Evidências do cenário</dt><dd>Dois sites não abrem no notebook; outro dispositivo acessa a mesma rede; a opção de Wi-Fi aparece desativada.</dd></div>
+            <div><dt>Ação proposta</dt><dd>Ativar o Wi-Fi, selecionar a rede correta e verificar se a conexão é estabelecida.</dd></div>
+            <div><dt>Resolução simulada</dt><dd>No exercício, a ativação do Wi-Fi restabelece a conexão. O acesso aos dois sites é considerado validado e o usuário confirma que pode continuar.</dd></div>
+            <div><dt>Status do exemplo</dt><dd>Resolvido no cenário simulado. Em um atendimento real, registrar a validação e seguir o fluxo de encerramento da organização.</dd></div>
+          </dl>
+          <h3>Exemplo de retorno ao usuário</h3>
+          <blockquote>“Neste exemplo, identificamos que o Wi-Fi estava desativado e orientamos sua ativação. Por favor, confirme se os sites que você precisa usar estão abrindo. Se o problema voltar, informe o horário e a mensagem apresentada.”</blockquote>
+          <p class="practice-note">Um registro útil descreve fatos, ações e resultados em ordem. Use identificadores de equipamentos e mensagens de erro quando necessário; exclua senhas e informações pessoais desnecessárias.</p>
+        </section>
+
+        <section id="windows" class="portfolio-card material-section" aria-labelledby="windows-titulo">
+          <div class="section-heading">
+            <i class="bi bi-microsoft material-icon" aria-hidden="true"></i>
+            <header>
+              <p class="badge">Guia de estudo</p>
+              <h2 id="windows-titulo">Guia básico de Windows</h2>
+            </header>
+          </div>
+          <p class="section-lead">Orientações introdutórias para o Windows 11. Em equipamentos da empresa, siga as orientações da equipe de TI.</p>
+          <div class="guide-block">
+            <h3>Quando a internet não funciona</h3>
+            <p>Abra Configurações → Rede e Internet. Confira se está conectado à rede esperada. No Wi-Fi, observe se ele está ativado e se o modo avião está desligado. Teste outro site e informe ao suporte se a falha ocorre em todos ou apenas em um.</p>
+            <p class="source">Consulta: <a href="https://support.microsoft.com/pt-br/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows" target="_blank" rel="noopener noreferrer">orientações de conexão da Microsoft</a>.</p>
+          </div>
+          <div class="guide-block">
+            <h3>Quando aparece um aviso de pouco espaço</h3>
+            <p>Abra Configurações → Sistema → Armazenamento e observe as categorias que ocupam espaço. Revise os itens antes de qualquer exclusão. Se tiver dúvida sobre um arquivo ou aplicativo, consulte o suporte; mantenha os documentos de trabalho no local de armazenamento definido pela empresa.</p>
+            <p class="source">Consulta: <a href="https://support.microsoft.com/pt-br/windows/experience/storage-filemanagement/storage-settings-in-windows" target="_blank" rel="noopener noreferrer">configurações de armazenamento da Microsoft</a>.</p>
+          </div>
+          <div class="guide-block">
+            <h3>Como pedir ajuda com clareza</h3>
+            <ul class="checklist">
+              <li>Informe o que tentava fazer e qual aplicativo estava usando.</li>
+              <li>Copie a mensagem de erro ou envie uma captura sem dados sensíveis.</li>
+              <li>Indique quando começou, a frequência e quem mais foi afetado.</li>
+              <li>Conte quais verificações já fez e os resultados observados.</li>
+            </ul>
+            <p class="message-example"><strong>Exemplo fictício:</strong> “Ao abrir o sistema no navegador, aparece uma mensagem de falha de conexão. Começou hoje de manhã. Outros sites abrem normalmente; tentei novamente e o erro continuou.”</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+        <a class="logo" href="../index.html">Guilherme Cardoso</a>
+        <p>Materiais de estudo em suporte técnico</p>
+      </div>
+      <div class="col-b">
+        <a class="button" href="../index.html#support-materials">Voltar ao portfólio <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toggle">
+    <input type="checkbox" id="sw-checkbox" />
+    <label for="sw-checkbox" title="Mudar tema">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z" fill="rgba(255,255,255,1)" />
+      </svg>
+    </label>
+  </div>
+</body>
+</html>

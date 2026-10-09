@@ -1,6 +1,7 @@
-import { projetos } from "./projetos.js";
+import { projetos, materiaisSuporte } from "./projetos.js";
 import { initParticles } from "./particles.js";
 import "./i18n.js";
+import "./theme.js";
 
 // Hide loading screen immediately
 document.addEventListener("DOMContentLoaded", () => {
@@ -14,20 +15,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const navigation = document.querySelector("#navigation");
 const backToTopButton = document.querySelector("#backToTopButton");
-const toggle = document.querySelector("#sw-checkbox");
+const supportSection = document.querySelector("#support-materials .wrapper");
 const projectsSection = document.querySelector("#projects .wrapper");
 
 const about = document.querySelector("#about");
 const stats = document.querySelector("#stats");
 const experience = document.querySelector("#experience");
+const supportMaterials = document.querySelector("#support-materials");
 const projects = document.querySelector("#projects");
 const knowledge = document.querySelector("#knowledge");
 const contact = document.querySelector("#contact");
 
 window.addEventListener("load", function begin() {
+  if (supportSection) {
+    materiaisSuporte(supportSection);
+  }
   if (projectsSection) {
     projetos(projectsSection);
   }
+  onScroll();
   initProjectFilters();
   initCounters();
   initParticles();
@@ -42,6 +48,7 @@ function onScroll() {
 
   activateMenuAtCurrentSection(about);
   activateMenuAtCurrentSection(experience);
+  activateMenuAtCurrentSection(supportMaterials);
   activateMenuAtCurrentSection(projects);
   activateMenuAtCurrentSection(knowledge);
   activateMenuAtCurrentSection(contact);
@@ -60,7 +67,7 @@ function activateMenuAtCurrentSection(section) {
     sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine;
 
   const sectionId = section.getAttribute("id");
-  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`);
+  const menuElement = document.querySelector(`.menu a[href="#${sectionId}"]`);
 
   menuElement.classList.remove("active");
 
@@ -189,6 +196,9 @@ ScrollReveal({
   #experience,
   #experience header,
   #experience .timeline-item,
+  #support-materials,
+  #support-materials header,
+  #support-materials .card,
   #projects,
   #projects header,
   #projects .card,
@@ -198,15 +208,3 @@ ScrollReveal({
   #contact,
   #contact header`
 );
-
-// Toggle modo claro/escuro
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("light-mode");
-  localStorage.setItem("lightMode", document.body.classList.contains("light-mode"));
-});
-
-// Carregar preferência salva
-if (localStorage.getItem("lightMode") === "true") {
-  document.body.classList.add("light-mode");
-  toggle.checked = true;
-}
